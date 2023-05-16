@@ -3,7 +3,7 @@ import classes from './Layout.module.css';
 
 function Layout(props) {
   return (
-    <div className="container">
+    <div className="ims-display">
       <MainNavigation />
       <main className={classes.main}>{props.children}</main>
     </div>

@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+.ims-display {
+  display: flex;
+  min-height: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -3,3 +3,8 @@
     width: 90%;
     max-width: 40rem;
   }
+
+  .ims-display {
+    display: flex;
+    min-height: 100%;
+}

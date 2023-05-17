@@ -1,30 +1,28 @@
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-
-import classes from "./MainNavigation.module.css"
+import classes from "./MainNavigation.module.css";
+import { Container, NavItem, Navbar, Nav } from "react-bootstrap";
 
 function MainNavigation() {
-  const location = useLocation();
-  const { pathname } = location;
-  const splitLocation = pathname.split("/");
-  console.log(splitLocation[1]);
   return (
-    <header className={classes.header}>
-      <div className={classes.logo}>IMS Dashboard</div>
-      <nav>
-        <ul>
-          <li className={splitLocation[1] === "" ? "active" : ""}>
-            <Link to='/'>Home</Link>
+    <Navbar collapseOnSelect expand="md" className={classes.header}>
+      <Container>
+        <Navbar.Brand>IMS Dashboard</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+        <ul className="me-auto navbar-nav">
+          <li className="nav-item">
+            <Link to="/">Home</Link>
           </li>
-          <li className={splitLocation[1] === "putaway" ? "active" : ""}>
-            <Link to='/putaway'>Putaway</Link>
+          <li className="nav-item">
+            <Link to="/putaway">Putaway</Link>
           </li>
-          <li className={splitLocation[1] === "picking" ? "active" : ""}>
-            <Link to='/picking'>Picking</Link>
+          <li className="nav-item">
+            <Link to="/picking">Picking</Link>
           </li>
         </ul>
-      </nav>
-    </header>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

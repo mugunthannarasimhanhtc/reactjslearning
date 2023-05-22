@@ -4,6 +4,7 @@ import HomePage from './pages/Home';
 import PutawayPage from './pages/Putaway';
 import PickingPage from './pages/Picking';
 import Layout from './components/layout/Layout';
+import './App.css'
 
 function App() {
   return (

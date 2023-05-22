@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Layout(props) {
   return (
-    <Container>
+    <Container className={classes.imsdisplay}>
       <Row>
         <Col>
           <MainNavigation />

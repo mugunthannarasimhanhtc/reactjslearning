@@ -1,10 +1,8 @@
 .main {
     margin: 3rem auto;
     width: 90%;
-    max-width: 40rem;
   }
 
-  .ims-display {
-    display: flex;
-    min-height: 100%;
+  .imsdisplay {
+    background-color: rgb(244 247 253) !important;
 }

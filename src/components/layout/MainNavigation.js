@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
-import { Container, NavItem, Navbar, Nav } from "react-bootstrap";
+import { Container,  Navbar } from "react-bootstrap";
 
 function MainNavigation() {
   return (
